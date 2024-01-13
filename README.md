@@ -1,5 +1,5 @@
 
-# Online Paymen
+# Online Payment
 
 Please use this form and follow the prompts to submit online payment.
 
