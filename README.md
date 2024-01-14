@@ -14,5 +14,5 @@ Please use this form and follow the prompts to submit online payment.
 
 ## Screenshot
 
-![Screenshot](https://github.com/salvadorjusaino/payment-form-amaryllis/blob/master/screenshot.png)
+![Screenshot](https://github.com/salvadorjusaino/payment-form-amaryllis/blob/master/screen-shot.png)
 
