@@ -1,21 +1,26 @@
 <div class="form-wrapper form-payment" id="ama-paybutton">
-    <form class="react-form-contents" autocomplete="off" action="https://www.eprocessingnetwork.com/cgi-bin/wo/order.pl" id="pay_now_form" method="post">
+    <form class="react-form-contents" autocomplete="off" action="https://www.eprocessingnetwork.com/cgi-bin/wo/order.pl"
+        id="pay_now_form" method="post">
         <div class="field-list">
             <div class="form-item field currency required">
                 <label class="title" for="ItemCostInit">
                     <div class="form-item-label">
-                        <span>Enter Ammount</span><span class="description required">(required)</span>
+                        <span>Enter Amount</span><span class="description required">(required)</span>
                     </div>
                 </label>
                 <div class="form-item-field">
-                    <input type="text" name="ItemCostInit" id="ItemCostInit" autocomplete="false" placeholder="00.00" value="" size="8" maxlength="8" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0'); let GFG = function () { this.value = document.getElementById('ItemCostInit').value; this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0'); const ItemCost = document.getElementById('ItemCost'); const costfee = document.getElementById('costfee'); const boxfee = document.getElementById('boxfee'); if (this.value !='') { boxfee.style.display = 'block'; }else{ boxfee.style.display = 'none'; } var cost = parseFloat(this.value); var fee = (cost * 0.04); costfee.innerHTML = fee; ItemCost.value = cost; }();" style="padding: 2px 0 5px 28.625px; max-width: 120px;" required />
+                    <input type="text" name="ItemCostInit" id="ItemCostInit" autocomplete="false" placeholder="00.00"
+                        value="" size="8" maxlength="8"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0'); let GFG = function () { this.value = document.getElementById('ItemCostInit').value; this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0'); const ItemCost = document.getElementById('ItemCost'); const costfee = document.getElementById('costfee'); const boxfee = document.getElementById('boxfee'); if (this.value !='') { boxfee.style.display = 'block'; }else{ boxfee.style.display = 'none'; } var cost = parseFloat(this.value); var fee = (cost * 0.04); costfee.innerHTML = fee; ItemCost.value = cost; console.log('Nuevo valor del input: ' + this.value); }();"
+                        style="padding: 2px 0 5px 28.625px; max-width: 120px;" required />
                     <span class="form-input-prefix">$</span>
                 </div>
             </div>
             <div id="boxfee" class="form-item field currency required">
                 <label class="title" for="costfee">
                     <div class="form-item-label">
-                        <span class="description required">A Service/Convenience Fee of 4.00% of the Total will be included in this transaction.</span>
+                        <span class="description required">A Service/Convenience Fee of 4.00% of the Total will be
+                            included in this transaction.</span>
                     </div>
                 </label>
                 <div class="form-item-field">
@@ -38,21 +43,26 @@
         <input type="hidden" name="QB" value="">
         <input type="hidden" name="ItemCost" id="ItemCost" value="" />
         <input type="hidden" name="ItemQty" value="1" />
+
         <input type="hidden" name="ServiceDesc" value="Service/Convenience Fee of 4.00% of the Total" />
         <input type="hidden" name="ServiceFee" value="0.00" />
         <input type="hidden" name="ServicePercent" value="4.00" />
+
         <input type="hidden" name="ePNAccount" value="03193">
-        <input type="hidden" name="ReturnToURL" value="https://pike-badger-d6tk.squarespace.com/billing-return">
+        <input type="hidden" name="ReturnToURL" value="https://amaryllisdesigns.com/billing-return">
         <input type="hidden" name="BackgroundColor" value="White">
         <input type="hidden" name="TextColor" value="Black">
-        <input type="hidden" name="LogoURL" value="http://images.squarespace-cdn.com/content/64baab040b9b213595f534df/167fe211-2dfd-4479-8188-d0f92adc295a/Amaryllis-Logo-positive.png">
+        <input type="hidden" name="LogoURL"
+            value="http://images.squarespace-cdn.com/content/64baab040b9b213595f534df/167fe211-2dfd-4479-8188-d0f92adc295a/Amaryllis-Logo-positive.png">
         <div class="ama-pay">
-            <button type="submit" class="button sqs-system-button sqs-editable-button sqs-button-element--primary">PAY INVOICE</button>
+            <button type="submit" class="button sqs-system-button sqs-editable-button sqs-button-element--primary">PAY
+                INVOICE</button>
         </div>
     </form>
 </div>
 <style type="text/css">
-    p:empty, #boxfee {
+    p:empty,
+    #boxfee {
         display: none;
     }
 
@@ -113,7 +123,7 @@
         height: 30px;
         align-items: center;
         max-width: 115px;
-        color: var(--dynamic-input-text-color,#000000);
+        color: var(--dynamic-input-text-color, #000000);
         font-size: calc(var(--form-block-input-text-font-font-size-value) * 1rem) !important;
     }
 </style>
